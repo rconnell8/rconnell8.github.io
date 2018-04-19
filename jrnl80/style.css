@@ -1,0 +1,22 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  max-width: 400px;
+  margin: auto;
+  color: #444;
+}
+
+h1 {
+  font-family:"Noto Serif", serif;
+  font-size: 62px;
+  color:red;
+}
+
+ul {
+  color:orange;
+}
