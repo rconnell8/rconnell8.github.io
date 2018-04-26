@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="swiper.min.css">
 
@@ -14,7 +16,7 @@
     }
     body {
       background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-family: Arial, sans-serif;
       font-size: 14px;
       color:#000;
       margin: 0;
@@ -48,8 +50,8 @@
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Belmont Stakes Celebrates 150th Anniversary</div>
-      <div class="swiper-slide"> <img src= "https://static.americasbestracing.net/s3fs-public/styles/large_hero_16_9/public/article/aS6S_9587.jpg"></div>
+      <div class="swiper-slide"><h1>Belmont Stakes Celebrates 150th Anniversary</h1></div>
+      <div class="swiper-slide"><p><img src="http://a.espncdn.com/winnercomm/PG_BelmontStakes012_14.jpg"></p></div>
       <div class="swiper-slide">Slide 3</div>
       <div class="swiper-slide">Slide 4</div>
       <div class="swiper-slide">Slide 5</div>
@@ -61,9 +63,6 @@
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
   </div>
 
   <!-- Swiper JS -->
@@ -72,13 +71,10 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
       pagination: {
         el: '.swiper-pagination',
-        type: 'progressbar',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        clickable: true,
       },
     });
   </script>
